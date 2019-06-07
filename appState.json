@@ -1,0 +1,89 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "577ff7c2-213c-426d-ae0d-3d9766016904": {
+        "id": "577ff7c2-213c-426d-ae0d-3d9766016904",
+        "parent": null,
+        "name": "test-lowa",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "513d74ef-14c3-42ca-9c3b-ad48dece63e5"
+        ],
+        "isRemovable": false,
+        "filePath": "test-lowa"
+      },
+      "513d74ef-14c3-42ca-9c3b-ad48dece63e5": {
+        "id": "513d74ef-14c3-42ca-9c3b-ad48dece63e5",
+        "parent": "577ff7c2-213c-426d-ae0d-3d9766016904",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test-lowa/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "2c08ad24-887e-441b-ab91-2e4ff0da6592": {
+        "id": "2c08ad24-887e-441b-ab91-2e4ff0da6592",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.testLowafunction = require(\"./test-lowa/function.js\").handler;"
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "577ff7c2-213c-426d-ae0d-3d9766016904",
+    "openFiles": [
+      "513d74ef-14c3-42ca-9c3b-ad48dece63e5"
+    ],
+    "currentFileId": "513d74ef-14c3-42ca-9c3b-ad48dece63e5",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "test-lowa",
+    "projectDescription": "sample",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-central1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1559894556573
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test-lowa",
+      "url": "https://github.com/HirudineeADRT/test-lowa"
+    }
+  }
+}
